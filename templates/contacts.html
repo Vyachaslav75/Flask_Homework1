@@ -1,0 +1,15 @@
+{% extends 'base_home1.html' %}
+
+
+{% block content %}
+
+<table>
+    {% for txt in context %}
+    <tr>
+        <td>{{ txt.phone }}</td>
+        <td>{{ txt.mail }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

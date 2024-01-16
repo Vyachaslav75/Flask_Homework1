@@ -1,0 +1,17 @@
+{% extends 'base_home1.html' %}
+
+
+{% block content %}
+
+<table>
+    {% for txt in context %}
+    <tr>
+        <td>{{ txt.type }}</td>
+        <td>{{ txt.color }}</td>
+        <td>{{ txt.size }}</td>
+        <td>{{ txt.price }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}
